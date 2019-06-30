@@ -1,0 +1,176 @@
+%Dokumentklasse
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage[left= 2.5cm,right = 2cm, bottom = 4 cm]{geometry}
+%\usepackage[onehalfspacing]{setspace}
+% ============= Packages =============
+% Dokumentinformationen
+\usepackage[
+pdftitle={Hardwarekonzept},
+pdfsubject={},
+pdfauthor={Niclas Alexander Esser},
+pdfkeywords={},	
+hidelinks
+]{hyperref}
+
+
+% Standard Packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, subfig}
+\usepackage{caption}
+\graphicspath{{Bilder/}} 
+\usepackage{fancyhdr} 
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{float}
+%\usepackage{paralist}
+% zusätzliche Schri ftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{todonotes}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{titling}
+\usepackage{fancyhdr, graphicx}
+%Code design
+\usepackage{listings}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+
+
+\usepackage[			% Hyperlinks im Dokument
+hidelinks,       	%Keine Markierung um den Link
+]{hyperref}
+\graphicspath{{Bilder/}} 
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+%nicht einrücken nach Absatz
+\setlength{\parindent}{0pt}
+% ============= Kopf- und Fußzeile =============
+\pagestyle{plain}
+\lhead{\slshape \leftmark}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+%\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\renewcommand{\headrulewidth}{0pt}
+% ============= Abküruzungverzeichnis ============
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\newcommand*\keystroke[1]{%
+	\tikz[baseline=(key.base)]
+	\node[%
+	draw,
+	fill=white,
+	drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+	rectangle,
+	rounded corners=2pt,
+	inner sep=1pt,
+	line width=0.5pt,
+	font=\scriptsize\sffamily
+	](key) {#1\strut}
+	;
+}
+\usepackage[printonlyused]{acronym}
+\newcommand{\flet}[2]{#1_{\text{#2}}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\dB}{\textrm{dB}}
+\newcommand{\Hz}{\textrm{Hz}}
+\newcommand{\MHz}{\textrm{MHz}}
+\newcommand{\GHz}{\textrm{GHz}}
+\newcommand{\MF}{\textrm{MFlops}}
+\newcommand{\GF}{\textrm{GFlops}}
+\newcommand{\m}{\textrm{m}}
+\newcommand{\mm}{\textrm{mm}}
+\newcommand{\MByte}{\textrm{MByte}}
+\newcommand{\GByte}{\textrm{GByte}}
+\newcommand{\V}{\textrm{V}}
+\newcommand{\s}{\textrm{s}}
+\newcommand{\MS}{\textrm{MSample}}
+\newcommand{\mus}{\textrm{\mu s}}
+\newcommand{\bit}{\textrm{bit}}
+
+
+% ============= Package Einstellungen & Sonstiges ============= 
+%Besondere Trennungen
+\hyphenation{De-zi-mal-tren-nung}
+
+% Festlegung Art der Zitierung - Havardmethode: Abkuerzung Autor + Jahr
+\bibliographystyle{IEEEtran}
+
+
+% ============= Logo auf Titelseite ============= 
+
+
+% ============= Dokumentbeginn =============
+\begin{document}
+	%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+	\pagestyle{empty}
+	
+	% ============ Code Stye =================
+	\lstdefinestyle{customc}{
+		belowcaptionskip=1\baselineskip,
+		breaklines=true,
+		frame=L,
+		xleftmargin=\parindent,
+		language=C,
+		showstringspaces=false,
+		basicstyle=\footnotesize\ttfamily,
+		keywordstyle=\bfseries\color{green!40!black},
+		commentstyle=\itshape\color{purple!40!black},
+		identifierstyle=\color{blue},
+		stringstyle=\color{orange},
+	}
+	
+	
+	
+	%die \include{datei} bewirkt das die anderen LaTex dateien hier aufgerufen werden.
+	\include{Title}
+	\pagenumbering{Roman}
+	\cleardoublepage 
+	% Beendet eine Seite und erzwingt auf den nachfolgenden Seiten die Ausgabe aller Gleitobjekte (z.B. Abbildungen), die bislang definiert, aber noch nicht ausgegeben wurden. Dieser Befehl fügt, falls nötig, eine leere Seite ein, sodaß die nächste Seite nach den Gleitobjekten eine ungerade Seitennummer hat. 
+	
+	% pagestyle für gesamtes Dokument aktivieren
+	\pagestyle{fancy}
+	
+	
+	
+	\pagenumbering{arabic}
+	
+	\include{Einleitung}
+	
+	\include{Praktikum}
+	
+\end{document}
