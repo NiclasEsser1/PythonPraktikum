@@ -263,3 +263,32 @@ num = 3 + 4j 	# Zuweisung
 r = num.real	# Realteil
 i = num.imag	# Imaginaerteil
 \end{lstlisting}
+
+\chapter{Praktikum 2}
+Erstelle eine Datei mit dem Namen \code{praktikum2.py} im dafür vorgesehen Ordner \code{Praktikum\_2}. In dieser Datei definieren wir unsere Funktionen und rufen sie ebenfalls dort auf. Das Python Programm bittet den Nutzer einen Wert zwischen 1 - 10 einzugeben. Hierfür kannst du die \code{input()}-Funktion nehmen. Vergiss aber nicht die Eingabe vom Nutzer zu überprüfen, es dürfen nur Werte zwischen 1 und 10 eingegeben werden. 
+
+Je nach Nutzereingabe soll das Programm eine zugehörige Funktion aufrufen, dafür legst du ein Dictonary an.
+\begin{lstlisting}
+option{
+	0: divBy7
+	1: factorial
+	2: multipliedDictonary
+	3: tupleAndList
+	4: InOutStr
+	5: calculateFormular
+	6: generateTwoDimArray
+	7: sortString
+	8: upperLetters
+	9: removeDuplicates
+	10: digitsDividedByFive
+}
+\end{lstlisting} 
+\section{Aufgabe: Modulo Operator}
+Schreibe eine Funktion mit zwei Eingabewerten \code{min} und \code{max}. Die Funktion soll alle Zahlen finden, die durch 7 teilbar und im Bereich (min/max) liegen. Die Zahlen dürfen \underline{nicht} durch 2 teilbar sein. Gebe die Zahlen in Form eines Strings aus, sodass folgende Beispiel Ausgabe ensteht
+\begin{lstlisting}
+Choose an exercise (1-15): 1
+Set min: 10
+Set max: 1000
+14, 21, 28, 42 ..., 987, 994
+\end{lstlisting}
+

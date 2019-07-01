@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.25)  30 JUN 2019 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.25)  1 JUL 2019 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2121,21 +2121,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[9] [10]) [11]
+[9] [10] [11]
+chapter 3.
+
+Overfull \hbox (5.29814pt too wide) in paragraph at lines 268--269
+\T1/lmr/m/n/12 Erstelle ei-ne Da-tei mit dem Na-men \T1/lmtt/m/n/12 praktikum2.
+py \T1/lmr/m/n/12 im da-für vor-ge-se-hen Ord-ner \T1/lmtt/m/n/12 Praktikum_2\T
+1/lmr/m/n/12 .
+ []
+
+) [12
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (./main.aux (./Title.aux) (./Einleitung.aux) (./Praktikum.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF78002D2315C4E51D1FA1AF196FE33E;672.
+(rerunfilecheck)             Checksum: 90038E9BECE1B2E2E00561EA2335FE0D;790.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 24521 strings out of 492982
- 441281 string characters out of 6134896
- 637176 words of memory out of 5000000
- 27544 multiletter control sequences out of 15000+600000
+ 24581 strings out of 492982
+ 442140 string characters out of 6134896
+ 645176 words of memory out of 5000000
+ 27582 multiletter control sequences out of 15000+600000
  88225 words of font info for 70 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  73i,12n,95p,8876b,1939s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2153,10 +2164,10 @@ lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (12 pages, 346668 bytes).
+Output written on main.pdf (13 pages, 354081 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
